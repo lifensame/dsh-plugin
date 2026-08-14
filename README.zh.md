@@ -2,6 +2,8 @@
 
 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）的**全局记忆**插件。它给每个 Agent 一份持久、跨会话的长期记忆：记录那些应该跨越会话、项目和工作区长期保留的事实、用户偏好和决策，并自动把它们召回进每一个任务。
 
+![Q版 DeepSeek 记忆吉祥物](assets/q-version-deepseek-memory.png)
+
 ## 功能
 
 | 功能 | 说明 |

@@ -2,6 +2,8 @@
 
 Global memory plugin for the [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`). It gives every agent a persistent, cross-session **long-term memory**: durable facts, user preferences, and decisions that survive across sessions, projects, and workspaces — and it automatically recalls them into every task.
 
+![Q版 DeepSeek 记忆吉祥物](assets/q-version-deepseek-memory.png)
+
 > 中文说明见 [README.zh.md](./README.zh.md)。
 
 ## What it does
