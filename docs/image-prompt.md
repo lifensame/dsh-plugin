@@ -1,8 +1,10 @@
 # Q版 DeepSeek 记忆吉祥物 — 生成提示词
 
-> 已生成的效果图：[`../assets/q-version-deepseek-memory.png`](../assets/q-version-deepseek-memory.png)
+> 已生成的效果图：
+> - 社交预览用（<1MB，1254×1254 JPEG）：[`../assets/q-version-deepseek-memory.jpg`](../assets/q-version-deepseek-memory.jpg)
+> - 原始无损图（1254×1254 PNG）：[`../assets/q-version-deepseek-memory.png`](../assets/q-version-deepseek-memory.png)
 >
-> ![Q版 DeepSeek 记忆吉祥物](../assets/q-version-deepseek-memory.png)
+> ![Q版 DeepSeek 记忆吉祥物](../assets/q-version-deepseek-memory.jpg)
 
 下面是一份**详细版**提示词，用于生成「DeepSeek 记忆」的 Q 版（chibi）形象。分成：主提示词（中文）、英文版、可拆分的「模块化」版本、负面提示词与参数建议。
 
