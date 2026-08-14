@@ -1,0 +1,23 @@
+# dsh-memory bundle patch — global memory layer.
+#
+# Applied as ONE insert over the profile root (after dsh-base and any earlier
+# bundle). It mounts a single row that provides the memory store, the
+# model-facing memory_* tools, the per-step memory injection, and the `/memory`
+# slash command. All knobs have code-side defaults, so this config can stay
+# empty; the values below document the shipped defaults.
+#
+# `dshHome` is intentionally omitted: it resolves from $DSH_HOME, then ~/.dsh.
+# The memory files live under `<dshHome>/memory` (configurable via `memoryDir`).
+
+- insert:
+    - id: memory
+      name: 'dsh-memory'
+      config:
+        memoryDir: memory
+        maxInjectedBytes: 16384
+        searchDefaultLimit: 5
+        summarizeProvider: ''
+        summarizeModel: ''
+        summarizeMaxInputBytes: 24576
+        summarizeMaxOutputTokens: 512
+        summarizeTimeoutMs: 60000
