@@ -43,9 +43,4 @@ export interface Memory {
   updated: string;
 }
 
-export declare function apply(ctx: Context, config?: Config): {
-  store: {
-    dir: string;
-    displayDir: string;
-  };
-};
+export declare function apply(ctx: Context, config?: Config): void;
