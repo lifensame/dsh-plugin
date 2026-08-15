@@ -4,6 +4,8 @@
 
 ![Q版 DeepSeek 记忆吉祥物](assets/q-version-deepseek-memory.jpg)
 
+> 📖 完整使用教程（安装、验证、日常使用、配置、常见问题）：[docs/tutorial.md](./docs/tutorial.md)
+
 ## 功能
 
 | 功能 | 说明 |

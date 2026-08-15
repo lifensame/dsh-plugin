@@ -4,6 +4,8 @@ Global memory plugin for the [DeepSeek Harness](https://github.com/deepseek-ai/d
 
 ![Q版 DeepSeek 记忆吉祥物](assets/q-version-deepseek-memory.jpg)
 
+> 📖 Full usage tutorial (install, verify, daily use, config, FAQ): [docs/tutorial.md](./docs/tutorial.md) (中文)
+
 > 中文说明见 [README.zh.md](./README.zh.md)。
 
 ## What it does
