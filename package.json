@@ -1,7 +1,10 @@
 {
   "name": "dsh-memory",
   "description": "Global memory plugin for the DeepSeek Harness: persistent cross-session memories, automatic per-task recall, and model-facing add/search/list/delete/summarize tools",
-  "version": "0.1.0",
+  "version": "0.2.0",
+  "scripts": {
+    "test": "node test/smoke.mjs"
+  },
   "publishConfig": {
     "access": "public"
   },

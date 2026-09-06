@@ -16,17 +16,27 @@ Global memory plugin for the [DeepSeek Harness](https://github.com/deepseek-ai/d
 | **Automatic recall** | The memory context is injected into every agent step, so *every task* starts with your memories already loaded. |
 | **Automatic input** | The agent saves memories itself through tools — no manual file editing. |
 | **Auto-summarize** | `memory_summarize` distills a long input (or a recap of the conversation) into a compact memory using the language model. |
-| **Human commands** | `/memory` lists (or searches) memories from the chat UI. |
+| **Human commands** | `/memory` lists, searches, shows, or deletes memories from the chat UI. |
 
 ## Model-facing tools
 
-- `memory_add` — save a durable fact / preference / decision. Reusing the same title (or `id`) updates the existing memory.
-- `memory_search` — keyword search over titles, tags, and body.
+- `memory_add` — save a durable fact / preference / decision. Reusing the same title (or `id`) updates the existing memory. Titles in any language (中文 included) get distinct, stable ids.
+- `memory_search` — keyword search over titles, tags, and body. Multi-word queries rank memories matching all words first.
 - `memory_list` — list all memories (optionally filtered by tag).
 - `memory_delete` — forget a memory by id.
-- `memory_summarize` — distill text into a compact memory via the LLM, then save it.
+- `memory_summarize` — distill text into a compact memory via the LLM, then save it. An explicit `title` reuses the existing memory with that title.
 
 The standing injected instruction also tells the agent to *proactively* keep memory current (save new durable facts, update stale ones, avoid duplicates).
+
+## Human commands
+
+Type `/memory` in the chat input:
+
+- `/memory` — list all memories
+- `/memory <text>` — search memories
+- `/memory show <id>` — print one memory in full
+- `/memory rm <id>` — delete a memory
+- `/memory help` — show the usage
 
 ## Install
 
@@ -85,6 +95,10 @@ All options are optional; the values below are the defaults.
 ## Q-version logo
 
 A ready-to-use prompt for generating a chibi (Q版) DeepSeek-memory mascot is in [`docs/image-prompt.md`](./docs/image-prompt.md).
+
+## Changelog
+
+See [CHANGELOG.md](./CHANGELOG.md).
 
 ## License
 
